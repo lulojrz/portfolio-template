@@ -153,6 +153,39 @@ ul li {
 @media (max-width:800px) {
     .content-top-section{
         display: flex;
+        flex-direction: column;
+    }
+    .container-img{
+        display: flex;
         flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+
+    }
+    .container-img img{
+        width: 50%;
+    }
+    .container-img span{
+        margin: auto;
+    }
+}
+@media(max-width:500px){
+    .content-top-section{
+        width: 80%;
+        
+    }
+    .container-img{
+        flex-direction: column;
+    }
+    .container-img img{
+        width: 80%;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-left, .footer-right{
+        width: 100%;
     }
 }
